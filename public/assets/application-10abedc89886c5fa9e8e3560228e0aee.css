@@ -1,0 +1,650 @@
+/* line 1, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /home/ip-d/rubyworkspace/dashboard/dashboardapp/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.side_bar {
+	background-color: #4f5f6f;
+	box-sizing: border-box;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 203px;
+	transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+}
+.logo{
+	width: 100%;
+}
+.logo a {
+	color: #ffffff;
+	background-color: #384655;
+	font-size: 17.63px;
+	font-weight: 400;
+	padding: 20px 0;
+	width: 100%;
+}
+.dashboard{
+	width: 100%;
+}
+.dashboard h1 {
+	background-color: #6cb64f;
+	background-image: url("../img/dashboard.png");
+	background-position: 19px 24px;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	font-size: 12.34px;
+	font-weight: 400;
+	margin: 0;
+	padding: 21px 0 21px 47px;
+	text-transform: capitalize;
+}
+ul.sidebar_nav {
+	box-sizing: border-box;
+	margin: 0;
+	width: 100%;
+}
+ul.sidebar_nav li {
+	float: left;
+	list-style:none;
+	position: relative;
+	width: 100%;
+}
+ul.sidebar_nav li a{
+	background-repeat: no-repeat;
+	color: #ffffff;
+	font-size: 12.34px;
+	width: 100%;
+	font-weight: 400;
+	margin: 0;
+	opacity: 0.5;
+	padding: 21px 0 21px 47px;
+	transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+}
+ul.sidebar_nav li a.active{
+	background-color: #6cb64f;
+	opacity: 1;
+}
+ul.sidebar_nav li a.dashboard {
+    background-image: url("../img/dashboard.png");
+    background-position: 19px 24px;
+}
+ul.sidebar_nav li a.matches{
+	background-image: url("../img/matches_icon.png");
+	background-position: 19px 24px;
+}
+ul.sidebar_nav li a.player{
+	background-image: url("../img/player_icon.png");
+	background-position: 19px 24px;
+}
+ul.sidebar_nav li a.calender{
+	background-image: url("../img/calender_icon.png");
+	background-position: 19px 24px;
+}
+ul.sidebar_nav li a:hover{
+	background-color: #40505f;
+	color:#ffffff;
+	opacity: 1;
+}
+ul.sidebar_nav li ul.submenu_mobile{
+	display: none;
+}
+/*right part style start here*/
+.right_part_outer {
+	padding-left: 203px;
+	width: 100%;
+	transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+}
+.top_bar_section {
+	background-color: #d7dde4;
+	height: 66px;
+	padding-right: 66px;
+	width: 100%;
+}
+.top_bar_section button {
+	background-color: transparent;
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+.top_bar_section button a {
+	background-image: url("../img/search_icon.png");
+	background-position: right center;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 5px;
+	padding: 33px 0 33px 47px;
+}
+.top_bar_section input[type="search"] {
+	background-color: transparent;
+	border: solid 1px transparent;
+	box-shadow: none;
+	color: #7e8e9f;
+	float: left;
+	font-size: 12.34px;
+	font-weight: 400;
+	height: auto;
+	margin: 14px 0 0;
+	padding: 10px;
+	width: auto;
+}
+.top_bar_section input[type="search"]:hover,
+.top_bar_section input[type="search"]:focus{
+	border:solid 1px #a7afb7;
+}
+.top_bar_right_part {
+	box-sizing: border-box;
+	padding: 15px 0 14px;
+}
+.notificatio_icon {
+    padding: 9px 0;
+}
+.notificatio_icon a {
+	background-image: url("../img/notification_icon.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-right: 1px solid #bcc7d3;
+	float: left;
+	padding: 9px 36px 10px 15px;
+	position: relative;
+}
+.notificatio_icon a .notification_number {
+	background-color: #6cb64f;
+	border-radius: 100%;
+	color: #ffffff;
+	font-size: 8.81px;
+	left: 24px;
+	line-height: 5px;
+	padding: 5px;
+	position: absolute;
+	top: -7px;
+}
+.user_name {
+    padding: 4px 0;
+}
+.user_name a {
+	background-image: url("../img/drop_arrow.png");
+	background-position: right 13px;
+	background-repeat: no-repeat;
+	color: #4f5f6f;
+	font-size: 14px;
+	padding: 4px 24px 4px 10px;
+}
+.user_img {
+	border-radius: 100%;
+	height: 35px;
+	margin-left: 14px;
+	overflow: hidden;
+	width: 35px;
+}
+.user_img img {
+   height: 100%;
+}
+/*dashboard inner contant style start here*/
+.dashboard_inner {
+	background-color: #f0f3f6;
+	box-sizing: border-box;
+	padding: 46px 62px;
+	width: 100%;
+	transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+}
+.dashboard_inner h1 {
+	clear: both;
+	color: #4f5f6f;
+	float: left;
+	font-size: 15.87px;
+	font-weight: 700;
+	margin: 0;
+}
+.dashboard_inner p{
+	color:#7e8e9f;
+	font-size: 12.34px;
+	font-weight: 400;
+	margin: 0px;
+	float: left;
+	clear: both; 
+}
+.player_progress{
+	width: 100%;
+	border-top: solid 3px #dee4ea;
+	padding-top: 35px;
+}
+.player_progress_inner {
+	background-color: #ffffff;
+	box-shadow: 0 0 2px #eeeeee;
+	margin-bottom: 48px;
+	padding: 27px 29px 27px 18px;
+	margin-top: 25px;
+	width: 100%;
+}
+.player_progress_inner h2{
+	color:#4f5f6f;
+	font-size: 18.51px;
+	font-weight: 700;
+	float: left;
+	clear: both;
+	margin: 0px; 
+}
+.player_progress_inner p{
+	color:#7e8e9f;
+	float: left;
+	clear: both;
+	font-size: 11.46px;
+	font-weight: 400;
+	margin: 0px; 
+}
+.select_weak_detail {
+	background-image: url("../img/drop_arrow.png");
+	background-position: right 7px;
+	background-repeat: no-repeat;
+	color: #546a79;
+	cursor: pointer;
+	font-size: 12.34px;
+	font-weight: 600;
+	margin-top: 11px;
+	padding-right: 23px;
+	text-transform: uppercase;
+}
+.player_progress_inner ul.f-dropdown {
+	background: #384655 none repeat scroll 0 0;
+	border: 1px solid #4f5f6f;
+	border-radius: 0 0 5px 5px;
+}
+.player_progress_inner ul.f-dropdown li a{
+	color:#ffffff; 
+	font-weight: 600;
+	font-size: 12px;
+}
+.player_progress_inner ul.f-dropdown li{
+	border-bottom: solid 1px #4f5f6f;
+}
+.player_progress_inner ul.f-dropdown li:last-child{
+	border-bottom: none;
+}
+.player_progress_inner ul.f-dropdown::before{
+    border-color: transparent transparent #384655 transparent;
+}
+.player_progress_inner ul.f-dropdown::after{
+	border-color: transparent transparent #4f5f6f transparent;
+}
+.player_progress_inner ul.f-dropdown li:hover, 
+.player_progress_inner ul.f-dropdown li:focus {
+  background-color: #4f5f6f;
+}
+.player_progress_inner ul.f-dropdown.open::before {
+  left: 186px;
+}
+.player_progress_inner ul.f-dropdown.open::after {
+  left: 185px;
+}
+.player_progress_chart {
+	width: 100%;
+	padding-top: 37px;
+}
+.player_progress_chart img{
+	width: 100%;
+}
+.current_matches{
+	width: 100%;
+}
+.current_matches_outer {
+	border-top: 3px solid #dee4ea;
+	margin-top: 35px;
+	padding-top: 31px;
+	width: 100%;
+}
+.current_matches_inner {
+	background-color: #ffffff;
+	box-shadow: 0 0 2px #eeeeee;
+	overflow: auto;
+	width: 100%;
+}
+.top_caption{
+	width: 100%;
+	border-bottom: 1px solid #dde0e2;
+}
+.top_caption h3 {
+	color: #4f5f6f;
+	float: left;
+	font-size: 18.51px;
+	font-weight: 700;
+	margin: 0;
+	padding: 30px 34px 25px;
+}
+.top_caption span {
+	border-left: 1px solid #dde0e2;
+	float: right;
+	padding: 21px 34px 22px;
+}
+.top_caption a {
+	background-color: #6cb64f;
+	border-radius: 20px;
+	color: #ffffff;
+	float: right;
+	font-size: 15.87px;
+	font-weight: 400;
+	padding: 7px 16px;
+}
+table.current_matches_tabel {
+	border: none;
+	border-collapse: collapse;
+	margin: 0;
+	width: 100%;
+}
+table.current_matches_tabel tr th {
+	color: #4f5f6f;
+	font-size: 15.87px;
+	border-bottom:solid 1px #b8d3f0;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 34px 34px 30px;
+}
+table.current_matches_tabel tr th:first-child{
+	text-align: left
+}
+table.current_matches_tabel tr td {
+	color: #4f5f6f;
+	font-size: 15.87px;
+	border-bottom:solid 1px #dde0e2;
+	font-weight: 400;
+	text-transform: capitalize;
+	padding: 34px 34px 30px;
+	text-align: center;
+}
+table.current_matches_tabel tr td:first-child{
+	text-align: left;
+}
+table.current_matches_tabel tr:hover{
+	background-color: #e5e7ea;
+}
+.dotted {
+	background-color: #6cb64f;
+	border-radius: 100%;
+	float: none;
+	height: 10px;
+	margin-right: 19px;
+	margin-top: 4px;
+	width: 10px;
+}
+.edit{
+	margin-right: 15px;
+}
+.delete{
+	margin-left: 15px;
+}
+table.current_matches_tabel tr:hover td .dotted{
+	background-color: #e04e67;
+}
+@media (max-width:1041px){
+	table.current_matches_tabel tr td {
+	  padding: 34px 22px 30px;
+	  white-space: nowrap;
+	}
+	table.current_matches_tabel tr th {
+	  padding: 34px 22px 30px;
+	}
+	.edit {
+	  margin-right: 0;
+	}
+	.dashboard_inner {
+		background-color: #f0f3f6;
+		box-sizing: border-box;
+		padding: 46px 25px;
+		width: 100%;
+	}
+	.top_bar_section {
+	  height: auto;
+	  padding-right: 25px;
+	  width: 100%;
+	}
+}
+@media (max-width:767px){
+.side_bar {
+  width: 55px;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  overflow: hidden;
+}
+.side_bar:hover {
+  width: 208px;
+}
+.side_bar:hover ~ .right_part_outer {
+  padding-left: 208px;
+}
+.right_part_outer {
+  padding-left: 55px;
+  width: 100%;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+}
+ul.sidebar_nav li a {
+  padding: 21px 0 21px 55px;
+}
+ul.sidebar_nav li a.dashboard,
+ul.sidebar_nav li a.matches,
+ul.sidebar_nav li a.player,
+ul.sidebar_nav li a.calender {
+  background-position: 21px 24px;
+}
+.edit {
+  margin-right: 0;
+}
+table.current_matches_tabel tr td {
+  padding: 34px 22px 30px;
+}
+table.current_matches_tabel tr th {
+  padding: 34px 22px 30px;
+}
+table.current_matches_tabel {
+  border: medium none;
+  border-collapse: collapse;
+  margin: 0;
+  width: 800px;
+}
+.top_bar_right_part {
+  text-align: center;
+}
+.notificatio_icon {
+  display: inline-block;
+  float: none !important;
+}
+.user_name {
+  display: inline-block;
+  float: none !important;
+  vertical-align: top;
+}
+.user_img {
+  display: inline-block;
+  float: none !important;
+}
+}
+@media (max-width:680px){
+	ul.sidebar_nav li a.dashboard, 
+	ul.sidebar_nav li a.matches, 
+	ul.sidebar_nav li a.player, 
+	ul.sidebar_nav li a.calender {
+	  background-position: 21px center;
+	}
+	ul.sidebar_nav li a{
+		font-size: 0px;
+	}
+	.side_bar {
+	  overflow: visible;
+	  transition: all 0.5s ease 0s;
+	  width: 55px;
+	}
+	.side_bar:hover {
+	  width: 55px;
+	}
+	.side_bar:hover ~ .right_part_outer {
+	  padding-left: 55px;
+	}
+	ul.sidebar_nav li ul.submenu_mobile {
+	  background-color: #4f5f6f;
+	  border-radius: 0 3px 3px 0;
+	  position: absolute;
+	  right: -150px;
+	  top: 0;
+	  width: 150px;
+	  z-index: 1;
+	}
+	ul.sidebar_nav li:hover ul.submenu_mobile{
+		display: block;
+	}
+	ul.sidebar_nav li ul.submenu_mobile li a {
+	  color: #ffffff;
+	  float: left;
+	  font-size: 12.34px;
+	  font-weight: 400;
+	  margin: 0;
+	  padding: 11px 0 12px 19px;
+	  transition: all 0.5s ease 0s;
+	  width: 100%;
+	  border-radius: 0 3px 3px 0;
+	}
+}
+@media (max-width:640px){
+	.player_progress_inner ul.f-dropdown {
+		left: inherit !important;
+		right: 53px !important;
+		width: 200px !important;
+	}
+}
+@media (max-width:530px){
+	.top_bar_right_part {
+	  box-sizing: border-box;
+	  padding-bottom: 8px;
+	  padding-left: 25px;
+	  padding-top: 0;
+	  width: 100%;
+	}
+	.top_bar_section input[type="search"] {
+	  border: 1px solid #a7afb7;
+	  float: right;
+	  width: 78%;
+	}
+	table.current_matches_tabel tr td {
+	  padding: 19px 22px 20px;
+	}
+	table.current_matches_tabel tr th {
+	  padding: 19px 22px 20px;
+	}
+	.top_caption h3 {
+	  padding: 30px 20px 25px;
+	  text-align: center;
+	  width: 100%;
+	}
+	.top_caption span {
+	  border-left: 0 none;
+	  border-top: 1px solid #dde0e2;
+	  padding: 21px 15px 22px;
+	  text-align: center;
+	  width: 100%;
+	}
+	.top_caption a{
+		float: none;
+	}
+	.select_weak_detail {
+	  margin-bottom: 20px;
+	  width: 100%;
+	  text-align: right;
+	}
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

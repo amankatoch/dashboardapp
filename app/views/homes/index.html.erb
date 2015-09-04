@@ -1,0 +1,153 @@
+<div class="off-canvas-wrap docs-wrap" data-offcanvas="">
+  <div class="inner-wrap">
+    <!-- sider bar html start here -->
+    <div class="side_bar">
+      <div class="logo left text-center">
+        <a class="left" href="#">Logo</a>
+      </div>
+      <ul class="sidebar_nav left">
+        <li>
+          <a class="dashboard active left" href="#">Dashboard</a>
+          <ul class="submenu_mobile">
+            <li><a href="#">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="matches left" href="#">Matches</a>
+          <ul class="submenu_mobile">
+            <li><a href="#">Matches</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="player left" href="#">Players</a>
+          <ul class="submenu_mobile">
+            <li><a href="#">Players</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="calender left" href="#">Scores</a>
+          <ul class="submenu_mobile">
+            <li><a href="#">Scores</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- right part html end here -->
+    <div class="right_part_outer left">
+      <div class="top_bar_section left">
+        <button class="left">
+          <a href="#"></a>
+        </button>
+        <input type="search" value="Search">
+        <div class="top_bar_right_part right">
+          <span class="notificatio_icon left">
+            <a href="#">
+              <span class="notification_number">8</span>
+            </a>
+          </span>
+          <span class="user_name left">
+            <a href="#">user Name</a>
+          </span>
+          <span class="user_img left">
+            <a href="#"><img src="img/user_img.jpg" alt=""></a>
+          </span>
+        </div>
+      </div>
+      <!-- dashboard inner contant -->
+      <div class="dashboard_inner left">
+        <div class="player_progress left">
+          <h1>Hi there !</h1>
+          <p>Checkout the  weekly scores and player’s progress.</p>
+          <div class="player_progress_inner left">
+            <span class="right select_weak_detail" data-dropdown="drop" aria-expanded="false">This Week</span>
+            <div class="player_hedding left">
+              <h2>Player’s Progress</h2>
+              <p>Scores Level</p>
+            </div>  
+            <ul data-dropdown-content="" class="expand f-dropdown" id="drop" style="position: absolute; top: 47px; left: -99999px;" aria-hidden="true">
+              <li><a href="#">This is a link</a></li>
+              <li><a href="#">This is another</a></li>
+              <li><a href="#">Yet another</a></li>
+            </ul>
+            <div class="player_progress_chart left">
+              <img src="img/player_progress_chart.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="current_matches left">
+          <h1>Current Matches</h1>
+          <p>This table will show you how your current matches are</p>
+          <div class="current_matches_outer left">
+            <div class="current_matches_inner left">
+              <div  class="top_caption left">
+                <h3>Players List</h3>
+                  <span>
+                    <a href="#">Add New</a>
+                  </span>  
+              </div>
+              <table class="current_matches_tabel">
+                <tr>
+                  <th>Names</th>
+                  <th>score</th>
+                  <th>level</th>
+                  <th>Rank</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td><span class="dotted left"></span>Dhaval Trivedi</td>
+                  <td>110</td>
+                  <td>Advanced</td>
+                  <td>1</td>
+                  <td>
+                    <span class="edit"><a href="#"><img src="img/edit_icon.png" alt=""></a></span>
+                    <span class="delete"><a href="#"><img src="img/delete_icon.png" alt=""></a></span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><span class="dotted left"></span>Gyan Trivedi</td>
+                  <td>90</td>
+                  <td>Advanced</td>
+                  <td>2</td>
+                  <td>
+                    <span class="edit"><a href="#"><img src="img/edit_icon.png" alt=""></a></span>
+                    <span class="delete"><a href="#"><img src="img/delete_icon.png" alt=""></a></span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><span class="dotted left"></span>Hardik Patel</td>
+                  <td>90</td>
+                  <td>Advanced</td>
+                  <td>3</td>
+                  <td>
+                    <span class="edit"><a href="#"><img src="img/edit_icon.png" alt=""></a></span>
+                    <span class="delete"><a href="#"><img src="img/delete_icon.png" alt=""></a></span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><span class="dotted left"></span>Michale Jane</td>
+                  <td>80</td>
+                  <td>Advanced</td>
+                  <td>4</td>
+                  <td>
+                    <span class="edit"><a href="#"><img src="img/edit_icon.png" alt=""></a></span>
+                    <span class="delete"><a href="#"><img src="img/delete_icon.png" alt=""></a></span>
+                  </td>
+                </tr>
+
+              </table>
+            </div>
+          </div>  
+        </div>  
+      </div>
+    </div>
+  </div>
+  </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
