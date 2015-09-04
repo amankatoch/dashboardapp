@@ -33,101 +33,137 @@
       </ul>
     </div>
     <!-- right part html end here -->
-    <div class="right_part_outer left">
-      <div class="top_bar_section left">
-        <button class="left">
-          <a href="#"></a>
-        </button>
-        <input type="search" value="Search">
-        <div class="top_bar_right_part right">
-          <span class="notificatio_icon left">
-            <a href="#">
-              <span class="notification_number">8</span>
-            </a>
-          </span>
-          <span class="user_name left">
-            <a href="#">user Name</a>
-             <ul style="display:none">
-              <li><a href="#" >Edit Profile</a></li>
-              <li><a href="#" >Logout</a></li>
-            </ul>
-          </span>
-          <span class="user_img left">
-            <a href="#"><img src="/assets/user_img.jpg" alt=""></a>
-          </span>
+     <div class="right_part_outer left">
+        <div class="top_bar_section left">
+          <button class="left">
+            <a href="#"></a>
+          </button>
+          <input type="search" value="Search">
+          <div class="top_bar_right_part right">
+            <span class="notificatio_icon left">
+              <a href="#">
+                <span class="notification_number">8</span>
+              </a>
+            </span>
+            <span class="user_name left">
+              <a href="#">user Name</a>
+            </span>
+            <span class="user_img left">
+              <a href="#"><img src="/assets/user_img.jpg" alt=""></a>
+            </span>
+          </div>
+        </div>
+        <!-- dashboard inner contant -->
+        <div class="dashboard_inner left">
+          <div class="current_matches left">
+            <h1>Player’s Progress</h1>
+            <p>Checkout the  weekly scores and player’s rank.</p>
+            <div class="current_matches_outer left">
+              <div class="current_matches_inner left">
+                <div  class="top_caption left">
+                  <h3>Players List</h3>
+                    <span>
+                      <a href="#" data-reveal-id="firstModal">Add New</a>
+                    </span>
+                    <div class=" large-12 medium-12 small-12 columns"> 
+                      <div role="dialog" aria-hidden="true" aria-labelledby="firstModalTitle" data-reveal="" class="reveal-modal" id="firstModal" style="opacity: 1; visibility: hidden; display: none;">
+                        <div class="modal_pop">
+                          <table class="pop_up">
+                            <caption>Add New Player</caption>
+                            <tr>
+                              <td><label>Name</label></td>
+                              <td><input type="text" value="Enter your Name"></td>
+                            </tr>
+                            <tr>
+                              <td><label>Address</label></td>
+                              <td><input type="text" value="Address"></td>
+                            </tr>
+                            <tr>
+                              <td><label>Level</label></td>
+                              <td>
+                                <select>
+                                  <option>Select</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><label>Email</label></td>
+                              <td><input type="text" value="Address"></td>
+                            </tr>
+                            <tr>
+                              <td><label>Mob</label></td>
+                              <td><input type="text" value="Mobile Number"></td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="text-center">
+                                <button type="submit" value="Submit">Add</button>
+                                <button type="reset" value="Reset">Cancel</button>
+                              </td>
+                            </tr>
+                          </table>
+                          <a aria-label="Close" class="close-reveal-modal">×</a>
+                        </div>  
+                      </div>
+                    </div>   
+                </div>
+                <table class="current_matches_tabel">
+                  <tr>
+                    <th>Names</th>
+                    <th>score</th>
+                    <th>level</th>
+                    <th>Rank</th>
+                    <th>Action</th>
+                  </tr>
+                  <tr>
+                    <td><span class="dotted left"></span>Dhaval Trivedi</td>
+                    <td>200</td>
+                    <td>Advanced</td>
+                    <td>1</td>
+                    <td>
+                      <span class="edit"><a href="#"><img src="/assets/edit_icon.png" alt=""></a></span>
+                      <span class="delete"><a href="#"><img src="/assets/delete_icon.png" alt=""></a></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><span class="dotted left"></span>Dhaval Trivedi</td>
+                    <td>180</td>
+                    <td>Advanced</td>
+                    <td>2</td>
+                    <td>
+                      <span class="edit"><a href="#"><img src="/assets/edit_icon.png" alt=""></a></span>
+                      <span class="delete"><a href="#"><img src="/assets/delete_icon.png" alt=""></a></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><span class="dotted left"></span>Dhaval Trivedi</td>
+                    <td>10</td>
+                    <td>Intermediate</td>
+                    <td>3</td>
+                    <td>
+                      <span class="edit"><a href="#"><img src="/assets/edit_icon.png" alt=""></a></span>
+                      <span class="delete"><a href="#"><img src="/assets/delete_icon.png" alt=""></a></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><span class="dotted left"></span>Dhaval Trivedi</td>
+                    <td>110</td>
+                    <td>Beginner</td>
+                    <td>5</td>
+                    <td>
+                      <span class="edit"><a href="#"><img src="/assets/edit_icon.png" alt=""></a></span>
+                      <span class="delete"><a href="#"><img src="/assets/delete_icon.png" alt=""></a></span>
+                    </td>
+                  </tr>
+
+                </table>
+              </div>
+            </div>  
+          </div>  
         </div>
       </div>
-      <!-- dashboard inner contant -->
-      <div class="dashboard_inner left">
-        <div class="current_matches left">
-          <h1>Player’s Progress</h1>
-          <p>Checkout the  weekly scores and player’s rank.</p>
-          <div class="current_matches_outer left">
-            <div class="current_matches_inner left">
-              <div  class="top_caption left">
-                <h3>Players List</h3>
-                  <span>
-                    <a href="#">Add New</a>
-                  </span>  
-              </div>
-              <table class="current_matches_tabel">
-                <tr>
-                  <th>Names</th>
-                  <th>score</th>
-                  <th>level</th>
-                  <th>Rank</th>
-                  <th>Action</th>
-                </tr>
-                <tr>
-                  <td><span class="dotted left"></span>Dhaval Trivedi</td>
-                  <td>200</td>
-                  <td>Advanced</td>
-                  <td>1</td>
-                  <td>
-                    <span class="edit"><a href="#"><img src="/assets/edit_icon.png" alt=""></a></span>
-                    <span class="delete"><a href="#"><img src="/assets/delete_icon.png" alt=""></a></span>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><span class="dotted left"></span>Dhaval Trivedi</td>
-                  <td>180</td>
-                  <td>Advanced</td>
-                  <td>2</td>
-                  <td>
-                    <span class="edit"><a href="#"><img src="/assets/edit_icon.png" alt=""></a></span>
-                    <span class="delete"><a href="#"><img src="/assets/delete_icon.png" alt=""></a></span>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><span class="dotted left"></span>Dhaval Trivedi</td>
-                  <td>10</td>
-                  <td>Intermediate</td>
-                  <td>3</td>
-                  <td>
-                    <span class="edit"><a href="#"><img src="/assets/edit_icon.png" alt=""></a></span>
-                    <span class="delete"><a href="#"><img src="/assets/delete_icon.png" alt=""></a></span>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><span class="dotted left"></span>Dhaval Trivedi</td>
-                  <td>110</td>
-                  <td>Beginner</td>
-                  <td>5</td>
-                  <td>
-                    <span class="edit"><a href="#"><img src="/assets/edit_icon.png" alt=""></a></span>
-                    <span class="delete"><a href="#"><img src="/assets/delete_icon.png" alt=""></a></span>
-                  </td>
-                </tr>
-
-              </table>
-            </div>
-          </div>  
-        </div>  
-      </div>
-    </div>
   </div>
   </div>
     

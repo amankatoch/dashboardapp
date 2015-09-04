@@ -1,6 +1,107 @@
 body{
   font-family: 'Open Sans', sans-serif;
 }
+.reveal-modal {
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+  box-shadow: none;
+}
+.pop_up {
+  margin: 0 auto;
+}
+.modal_pop {
+  background: #ffffff;
+  margin: 0 auto;
+  position: relative;
+  width: 541px;
+}
+.modal_pop table{
+	width: 100%;
+	border:none;
+	border-collapse: collapse;
+}
+.modal_pop table{
+	width: 100%;
+}
+.modal_pop table caption {
+	background-color: #384655;
+	color: #ffffff;
+	font-family: "Open Sans",sans-serif;
+	font-size: 22.03px;
+	font-weight: 400;
+	padding: 24px 0;
+}
+.modal_pop table tr{
+	border-bottom: solid 1px #dde0e2;
+}
+
+.modal_pop table tr:hover{
+	background-color: #e5e7ea;
+}
+.modal_pop table tr td input[type="text"]{
+	margin-bottom: 0px;
+	border:solid 1px #e5e7ea;
+	color: #c3c4c4;
+	box-shadow: none;
+	font-weight: 400;
+	height: auto;
+	font-size: 14px;
+	padding:10px 19px; 
+}
+.modal_pop table tr td select{
+	margin-bottom: 0px;
+	border:solid 1px #e5e7ea;
+	color: #c3c4c4;
+	font-weight: 400;
+	box-shadow: none;
+	height: auto;
+	font-size: 14px;
+	padding:10px 19px; 
+}
+
+.modal_pop table tr td {
+    padding: 20px 22px;
+}
+.modal_pop table tr td label{
+	color: #4f5f6f;
+	font-weight: 400;
+	font-size: 18px;
+}
+.modal_pop table tr td:first-child {
+  width: 50px;
+}
+.modal_pop table tr td button[type="submit"] {
+	background-color: #6cb64f;
+	border-radius: 3px;
+	font-family: "Open Sans",sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+	margin-bottom: 0;
+	padding: 9px 0;
+	width:116px;
+	margin-right: 12px;
+}
+.modal_pop table tr td button[type="Reset"]{;
+	background-color: #384655;
+	border-radius: 3px;
+	font-family: "Open Sans",sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+	margin-bottom: 0;
+	padding: 9px 0;
+	width:116px;
+}
+.reveal-modal .close-reveal-modal {
+	background-color: #6cb64f;
+	border-radius: 100%;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 32px;
+	right: -14px;
+	text-align: center;
+	top: -14px;
+	width: 32px;
+}
 .side_bar {
 	background-color: #4f5f6f;
 	box-sizing: border-box;
@@ -28,7 +129,7 @@ body{
 }
 .dashboard h1 {
 	background-color: #6cb64f;
-	background-image: url("dashboard.png");
+	background-image: url("../img/dashboard.png");
 	background-position: 19px 24px;
 	background-repeat: no-repeat;
 	color: #ffffff;
@@ -66,19 +167,19 @@ ul.sidebar_nav li a.active{
 	opacity: 1;
 }
 ul.sidebar_nav li a.dashboard {
-    background-image: url("dashboard.png");
+    background-image: url("../img/dashboard.png");
     background-position: 19px 24px;
 }
 ul.sidebar_nav li a.matches{
-	background-image: url("matches_icon.png");
+	background-image: url("../img/matches_icon.png");
 	background-position: 19px 24px;
 }
 ul.sidebar_nav li a.player{
-	background-image: url("player_icon.png");
+	background-image: url("../img/player_icon.png");
 	background-position: 19px 24px;
 }
 ul.sidebar_nav li a.calender{
-	background-image: url("calender_icon.png");
+	background-image: url("../img/calender_icon.png");
 	background-position: 19px 24px;
 }
 ul.sidebar_nav li a:hover{
@@ -109,7 +210,7 @@ ul.sidebar_nav li ul.submenu_mobile{
 	padding: 0;
 }
 .top_bar_section button a {
-	background-image: url("search_icon.png");
+	background-image: url("../img/search_icon.png");
 	background-position: right center;
 	background-repeat: no-repeat;
 	float: left;
@@ -141,7 +242,7 @@ ul.sidebar_nav li ul.submenu_mobile{
     padding: 9px 0;
 }
 .notificatio_icon a {
-	background-image: url("notification_icon.png");
+	background-image: url("../img/notification_icon.png");
 	background-position: center center;
 	background-repeat: no-repeat;
 	border-right: 1px solid #bcc7d3;
@@ -164,7 +265,7 @@ ul.sidebar_nav li ul.submenu_mobile{
     padding: 4px 0;
 }
 .user_name a {
-	background-image: url("drop_arrow.png");
+	background-image: url("../img/drop_arrow.png");
 	background-position: right 13px;
 	background-repeat: no-repeat;
 	color: #4f5f6f;
@@ -236,7 +337,7 @@ ul.sidebar_nav li ul.submenu_mobile{
 	margin: 0px; 
 }
 .select_weak_detail {
-	background-image: url("drop_arrow.png");
+	background-image: url("../img/drop_arrow.png");
 	background-position: right 7px;
 	background-repeat: no-repeat;
 	color: #546a79;
@@ -511,6 +612,16 @@ table.current_matches_tabel {
 		left: inherit !important;
 		right: 53px !important;
 		width: 200px !important;
+	}
+	.modal_pop{
+		width:100%;
+	}
+	.reveal-modal {
+	  padding:50px 15px 0;
+	  width: 100%;
+	}
+	.modal_pop table tr td button[type="submit"] {
+	  width: 113px;
 	}
 }
 @media (max-width:530px){
