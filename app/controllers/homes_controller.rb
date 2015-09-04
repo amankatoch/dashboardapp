@@ -11,6 +11,16 @@ class HomesController < ApplicationController
   # GET /homes/1.json
   def show
   end
+ 
+  def matches
+  end
+
+  def players
+  end
+ 
+  def scores
+  end
+
 
   # GET /homes/new
   def new

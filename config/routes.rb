@@ -7,7 +7,11 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
 
   root 'homes#index'
-
+  match '/matches' => 'homes#matches' , :via => [:get , :post]
+  match '/players' => 'homes#players' , :via =>[:get , :post]
+  match '/scores' => 'homes#scores' , :via => [:get , :post]
+  match '/dashboard' => 'homes#index' , :via => [:get , :post]
+ 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
