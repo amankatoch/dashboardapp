@@ -129,7 +129,7 @@ body{
 }
 .dashboard h1 {
 	background-color: #6cb64f;
-	background-image: url("../img/dashboard.png");
+	background-image: url("dashboard.png");
 	background-position: 19px 24px;
 	background-repeat: no-repeat;
 	color: #ffffff;
@@ -167,19 +167,19 @@ ul.sidebar_nav li a.active{
 	opacity: 1;
 }
 ul.sidebar_nav li a.dashboard {
-    background-image: url("../img/dashboard.png");
+    background-image: url("dashboard.png");
     background-position: 19px 24px;
 }
 ul.sidebar_nav li a.matches{
-	background-image: url("../img/matches_icon.png");
+	background-image: url("matches_icon.png");
 	background-position: 19px 24px;
 }
 ul.sidebar_nav li a.player{
-	background-image: url("../img/player_icon.png");
+	background-image: url("player_icon.png");
 	background-position: 19px 24px;
 }
 ul.sidebar_nav li a.calender{
-	background-image: url("../img/calender_icon.png");
+	background-image: url("calender_icon.png");
 	background-position: 19px 24px;
 }
 ul.sidebar_nav li a:hover{
@@ -210,7 +210,7 @@ ul.sidebar_nav li ul.submenu_mobile{
 	padding: 0;
 }
 .top_bar_section button a {
-	background-image: url("../img/search_icon.png");
+	background-image: url("search_icon.png");
 	background-position: right center;
 	background-repeat: no-repeat;
 	float: left;
@@ -242,7 +242,7 @@ ul.sidebar_nav li ul.submenu_mobile{
     padding: 9px 0;
 }
 .notificatio_icon a {
-	background-image: url("../img/notification_icon.png");
+	background-image: url("notification_icon.png");
 	background-position: center center;
 	background-repeat: no-repeat;
 	border-right: 1px solid #bcc7d3;
@@ -263,14 +263,58 @@ ul.sidebar_nav li ul.submenu_mobile{
 }
 .user_name {
     padding: 4px 0;
+    position: relative;
 }
 .user_name a {
-	background-image: url("../img/drop_arrow.png");
+	background-image: url("drop_arrow.png");
 	background-position: right 13px;
 	background-repeat: no-repeat;
 	color: #4f5f6f;
 	font-size: 14px;
 	padding: 4px 24px 4px 10px;
+}
+ul.user_sub_menu {
+	background-color: #ffffff;
+	left: 0;
+	margin: 0;
+	position: absolute;
+	top: 51px;
+	width: 145px;
+}
+ul.user_sub_menu li{
+	list-style: none;
+}
+ul.user_sub_menu li a {
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #f3f3f3;
+	color: #4f5f6f;
+	float: left;
+	font-size: 12.34px;
+	padding: 5px 5px 5px 32px;
+	text-decoration: none;
+	width: 100%;
+	text-align: left;
+}
+ul.user_sub_menu li a.edit_profile {
+	background-image: url("edit_profile_icon.png");
+	background-position: 8px center;
+}
+ul.user_sub_menu li a.profile_logout {
+	background-image: url("profile_logout.png");
+	background-position: 8px center;
+}
+ ul.user_sub_menu:before {
+    border: inset 10px;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-color: transparent transparent #FFFFFF transparent;
+    border-bottom-style: solid;
+    position: absolute;
+    top: -19px;
+    left: 27px;
+    z-index: 89; 
 }
 .user_img {
 	border-radius: 100%;
@@ -337,7 +381,7 @@ ul.sidebar_nav li ul.submenu_mobile{
 	margin: 0px; 
 }
 .select_weak_detail {
-	background-image: url("../img/drop_arrow.png");
+	background-image: url("drop_arrow.png");
 	background-position: right 7px;
 	background-repeat: no-repeat;
 	color: #546a79;
@@ -561,6 +605,9 @@ table.current_matches_tabel {
   display: inline-block;
   float: none !important;
 }
+ul.user_sub_menu {
+  top: 57px;
+}
 }
 @media (max-width:680px){
 	ul.sidebar_nav li a.dashboard, 
@@ -662,5 +709,8 @@ table.current_matches_tabel {
 	  margin-bottom: 20px;
 	  width: 100%;
 	  text-align: right;
+	}
+	ul.user_sub_menu {
+	  top: 51px;
 	}
 }
